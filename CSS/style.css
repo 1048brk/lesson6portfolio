@@ -316,7 +316,7 @@ header.sticky{
     padding: 10px;
     border: none;
     background: #12141c;
-    color: var(--bg-color);
+    color: var(--text-color);
     font-size: 1.1rem;
     margin-bottom: 0.7rem;
     border-radius: 0.8;
@@ -336,6 +336,7 @@ header.sticky{
 .submit-btn:hover{
         background: transparent;
         border: 1px solid var(--primary-color);
+        cursor: pointer;
     }
     
 
