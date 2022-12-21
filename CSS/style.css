@@ -9,7 +9,7 @@
 
 }
 
-
+/* root da bir değişken tanımlıyoruz ve bu değişkeni her yer de kullanabiliyoruz */
 :root{
     --bg-color:#020312;
     --text-color: white;
@@ -23,6 +23,8 @@
     --a-font: 1.2rem;
     --h5-font:1.4rem;
     --h6-font:0.8rem;
+    --a-transition: all .40s ease;
+    --box-background: #12141c;
 
 
      
@@ -62,7 +64,7 @@ header{
     font-size: var(--p-font);
     padding: 10px 25px;
     border-radius: 0.5rem;
-    transition: all .40s ease;
+    transition: all .40s ease;/* imleç üzerine geldiğinde yavaş geçiş */
 
 }
 
@@ -77,7 +79,7 @@ section{
 
 .home{
     width: 100%;
-    height: 90vh;
+    height: 80vh;
     max-width: 100%;    
     position: relative;
     display: flex;
@@ -117,12 +119,13 @@ section{
     color:var(--text-color);
     padding: 15px 40px;
     border-radius: 0.8rem;
-    transition: all .40s ease;
+    
 }
 
 .btn:hover{
     background: transparent;
     border: 1px solid var(--primary-color);
+    transition: var(--a-transition);
 }
 
 header.sticky{
@@ -151,20 +154,21 @@ header.sticky{
     color: var(--secondary-color);
     font-size: var(--p-font);
     line-height: 25px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 .about-features{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .about-features h5{
     font-size: var(--h5-font);
     color: var(--a-font);
     font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 .about-img img{
@@ -182,6 +186,8 @@ header.sticky{
 .main-text h2{
     font-size: var(--h2-font);
     margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--primary-color); 
 }
 
 .main-text h4{
@@ -197,11 +203,12 @@ header.sticky{
     text-align: center;
     gap: 1.5rem;
     margin-top: 4rem;
+    margin-bottom: 10px;
 }
 
 .box{
     background: #12141c;
-    padding: 40px;
+    padding: 20px;
     border-top: 5px solid transparent;
     border-radius: 0.8rem;
     min-height: 400px;
@@ -229,120 +236,159 @@ header.sticky{
     color: var(--primary-color);
 }
 
-
 .portfolio-content{
     display: grid;
     grid-template-columns: repeat(3,2fr);
     align-items: center;
-    text-align: center;
     gap: 1.5rem;
-    margin-top: 3rem;
+    text-align: center;
 }
 
-
 .portfolio-box{
-    background: #12141c;
+    background:#12141c;
+    border-radius: 2rem;
     padding: 15px;
     border-top: 5px solid transparent;
-    border-radius: 0.8rem;
 }
 
 .portfolio-box img{
     width: 100%;
-    height: auto;
-    max-width: 300px;
-    border-radius: 0.8rem;
-    
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
 }
 
-.portfolio-content h6{
-    text-align: left;
+.portfolio-box h6{
     color: var(--primary-color);
     font-size: var(--h6-font);
 }
 
-.portfolio-content h3{
-    text-align: left;
-    color: var(--text-color);   
-}
-
-
-
-.contact{
-    display: grid;
-    grid-template-columns: repeat(2,2fr);
-    align-items: top;
-    text-align:left;
-    gap: 1.5rem;
-    text-decoration: none;
-    margin-top: 4rem;
-}
-
-.contact-text{
-    margin-top: 3rem;
-}
-
-.contact h2{
-    font-size: var(--h2-font);
-    margin-bottom: 2rem;
-}
-
-.contact h4{
-    font-size: var(--h4-font);
-    color: var(--primary-color);
-    text-transform: capitalize;
+.portfolio-box-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     margin-bottom: 1rem;
 }
 
-.contact p{
-    font-size: var(--p-font);
-    color: var(--secondary-color);
-    line-height: 1.4;
-    padding-bottom: 15px;
+.portfolio-box-text h6{
+    font-size: var(--h6-font)
 }
 
-
-.contact-data a{
-    padding-top: 8px;
-    color: var(--secondary-color);
-    display: block;
-    
+.portfolio-box h3{
+    text-align: left;
+    font-size: var(--h3-font);
+    color:var(--text-color)
 }
 
+.portfolio-box:hover {
+    border-top: solid var(--primary-color);
+    transition: var(--a-transition);
+}
 
-   
-.contact-form form input:not([type=submit]) , form textarea{
-    width: 100%;
-    padding: 10px;
-    border: none;
-    background: #12141c;
+.fas-fa-heart {
     color: var(--text-color);
-    font-size: 1.1rem;
-    margin-bottom: 0.7rem;
-    border-radius: 0.8;
 }
 
-.submit-btn{
-    width: fit-content;
-    font-size: var(--a-font);
-    font-weight: 600;
-    background-color: var(--primary-color);
-    color:var(--text-color);
-    padding: 15px 40px;
-    border-radius: 0.8rem;
-    transition: all .40s ease;
+.fas-fa-heart:active {
+    color: var(--primary-color);
 }
-    
-.submit-btn:hover{
-        background: transparent;
-        border: 1px solid var(--primary-color);
-        cursor: pointer;
-    }
+
+
+.contact {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: auto;
+    gap: 2rem;
+}
+
+.contact-text h2 {
+    color: var(--text-color);
+    font-size: var(--h2-font);
+    margin-bottom: 1rem;
+}
+
+.contact-text h4{
+    color: var(--primary-color);
+    font-size: var(--h4-font);
+    margin-bottom: 1rem;
+}
+.contact-text{
+    width: 100%;
+}
+
+.contact-text p{
+    color:var(--secondary-color);
+    font-size: var(--p-font);
+    margin-bottom: 1rem;
+}
+
+.contact-text a{
+    color: var(--text-color);
+    font-size: var(var(--a-font));
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.contact-icons{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 1rem;
+}
+
+.contact-icons a{
+    color: var(--primary-color);
+    background:var(--box-background);
+    padding: 1.5rem; 
+    border-radius: 1rem;
+}
+
+.contact-icons a:hover{
+    box-shadow: 2px 2px 5px #fc894d;
+}
+
+.submit-box {
+    width: 30%;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    margin-left: 0.8rem;
+}
+
+.submit-box:hover{
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    transition: var(--a-transition);
+}
+
+
+.submit-box:active {
+    transition: var(--a-transition);
+}
+
+.contact-form input, textarea{
+    width: 100%;
+    padding: 2rem;
+    background-color: var(--box-background);
+    margin: 0.5rem;
+    border-radius: 1rem;
+    border:none;
+    color: var(--text-color);
+}
+
+.contact-form textarea{
+    position: relative;
+    padding: 5rem;
+    padding-left: 7.5%;
+}
     
 
 
 .last-text{
-    padding-top: 3%;
+    padding-top: 2%;
     padding-bottom: 30px;
     text-align: center;
     color: var(--secondary-color);
