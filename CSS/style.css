@@ -135,7 +135,7 @@ header.sticky{
 
 .about{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px,auto));
     align-items: center;
     gap: 2rem;
 }
@@ -198,7 +198,8 @@ header.sticky{
 
 .services-content{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    /*grid-template-columns: repeat(3,1fr);*/
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
     align-items: center;
     text-align: center;
     gap: 1.5rem;
@@ -393,3 +394,46 @@ header.sticky{
     text-align: center;
     color: var(--secondary-color);
 }
+
+
+@media (min-width: 320px) and (max-width: 425px){
+    :root{
+        --h1-font: 4rem;
+        --h2-font: 2.5rem;
+        --h5-font:1.2rem;
+        --p-font: 0.8rem;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 768px){
+    .navbar a{
+        display: block;
+        margin: 1rem;
+        padding: 1rem;
+    }
+    :root{
+        --h1-font: 4.5rem;
+        --h2-font: 2.8rem;
+        --h5-font:1.5rem;
+    }
+
+    section{
+        padding: 100px 15% 90px;
+    }
+}
+
+@media (min-width:768px) and (max-width:1440){
+    sectiom{
+        padding: 120px 10% 90px;
+    }
+    :root{
+        --h1-font: 5.2rem;
+        --h2-font: 3.2rem;
+
+    }
+
+}
+
+
+    
+   
