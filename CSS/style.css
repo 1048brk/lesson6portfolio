@@ -78,7 +78,7 @@ section{
 }
 
 .home{
-    width: 87%;
+    width: 88%;
     height: 95vh;
     max-width: 100%;    
     position: relative;
@@ -86,8 +86,13 @@ section{
     align-items: center;
     justify-content: flex-start;
     background: url("../images/burak1.jpg");
-    background-size:cover;
+    background-size:contain;
+    background-repeat: no-repeat;
     background-position: center;
+    margin-left: 6%;
+   
+    
+
 }
 .home-text h4{
     color: var(--primary-color);
