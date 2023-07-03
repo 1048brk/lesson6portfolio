@@ -3,97 +3,110 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- I used this internet site for the icons  https://boxicons.com     -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
 </head>
 
 <body>
 
     <!--Header Menu-->
-    <header class="sticky">
-        <a href="#" class="logo"><img src="./images/logoburak.png" alt=""></a>
-       
+    <header>
+        <a href="#" class="logo"><img src="./images/logoburak.png" alt="my logo"></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
         <ul class="navbar">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About Me</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#portfolio">My Portfolio</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </header>
 
-    <!--Home-->
+    <!-- Home -->
     <section id="home" class="home">
         <div class="home-text">
             <h4>Hello</h4>
-            <h1>I am Burak <br> BIL<span>KAY</span></h1>
+            <h1>I am BILKAY <br> Bu<span>rock</span></h1>
             <h3>Web Developer and Music Lover</h3>
-            <a href="" class="btn">Hire Me</a>
+            <a href="#contact" class="btn">Work with Me</a>
         </div>
     </section>
 
     <!--About-->
     <section id="about" class="about">
         <div class="about-img">
-            <img src="./images/about.jpg"alt="">
+            <img src="./images/buraktek.png" alt="">
         </div>
 
         <div class="about-text">
-            <h2>About Me</h2> <br>
+            <h2>About Me</h2>
             <h4>Hi I am web developer and music lover</h4>
-            <p> I love designing static web pages and currently I am taking blockchain developer training, I am highly motiveted to work with you.</p>
-            <div class="about-features">
+            <p> I love designing dynamic web pages and currently I am taking fullstack developer bootcamp, I am highly
+                motiveted to work with you.</p>
+            <div class="about-gri">
+                <div class="about-in">
                     <h5>1.Problem Solving</h5>
-                    <h5>2.Creative Idea</h5>
-                    <h5>3.Search Lot</h5>
-                    <h5>4.High Quality</h5>
                 </div>
-
-         <a href="" class="btn">Contact Me</a>
+                <div class="about-in">
+                    <h5>2.Team Work</h5>
+                </div>
+                <div class="about-in">
+                    <h5>3.Creative Ideas</h5>
+                </div>
+                <div class="about-in">
+                    <h5>4.Efficient Solutions</h5>
+                </div>
+            </div>
+            <a href="#contact" class="btn">Contact Me</a>
         </div>
-
-        
-       
     </section>
 
     <!--Services-->
 
     <section id="services" class="services">
         <div class="main-text">
-            <h2>My Services</h2>
-            <h4>Better design, better experiences</h4>
+            <h2>My Services/Projects</h2>
+            <h4>Better design, better experiences, better solutions</h4>
         </div>
 
         <div class="services-content">
             <div class="box">
                 <img src="./images/serv1.png" alt="">
                 <h3>Mobile App Design</h3>
-                <p>Now I am taking a bootcamp and as long as I create some projects I am planning to publish them here. </p>
-                </div>
+                <p>Now I am taking a bootcamp and as long as I create some new projects I will publish them here for
+                    reference.
+                </p>
+            </div>
 
             <div class="box">
                 <img src="./images/serv2.png" alt="">
                 <h3>Website Design</h3>
-                <p>Now I am taking a bootcamp and as long as I create some projects I am planning to publish them here.</p>
-                </div>
+                <p>Now I am taking a bootcamp and as long as I create some new projects I will publish them here for
+                    reference.
+                </p>
+            </div>
 
             <div class="box">
                 <img src="./images/serv3.png" alt="">
                 <h3>Video Editing and Music </h3>
-                <p>I play turkish traditional instruments(saz and ud)I am planning to publish some of my video clips here </p>
-                </div>
-
-
+                <p>I play turkish traditional music instruments(saz and oud) <a
+                        href="https://www.youtube.com/watch?v=yTnuvh5UcTg" target="_blank"> For my introduction video
+                        please click here</a></p>
+            </div>
         </div>
+
     </section>
 
 
@@ -110,81 +123,81 @@
 
         <div class="portfolio-content">
 
-            <div class="portfolio-box">
-                <img src="images/portfolio1.jpg"/>
-                <div class="portfolio-box-header">    
-                    <div class="portfolio-box-text">
-                        <h6>Development</h6>
+            <div class="row">
+                <img src="images/1videoedit.jpg" />
+                <div class="main-row">
+                    <div class="row-text">
+                        <h6>Video Editing</h6>
                     </div>
-                    <div>
-                        <a href="#" class="fas-fa-heart">&#9829;</a>
+                    <div class="row-icon">
+                        <i class="bx bx-heart"></i>
                     </div>
-                </div>    
-                <h3>I will add some of my projects :D </h3>
+                </div>
+                <h3>I have 5 years experience in video editing. You can contact me for your professional videos. </h3>
             </div>
 
-            <div class="portfolio-box">
-                <img src="images/portfolio2.jpg"/>
-                <div class="portfolio-box-header">    
-                    <div class="portfolio-box-text">
-                        <h6>Development</h6>
+            <div class="row">
+                <img src="images/2menudesign.jpg" />
+                <div class="main-row">
+                    <div class="row-text">
+                        <h6>Menu/Brochure Design</h6>
                     </div>
-                    <div>
-                        <a href="#" class="fas-fa-heart">&#9829;</a>
+                    <div class="row-icon">
+                        <i class="bx bx-heart"></i>
                     </div>
-                </div>    
+                </div>
+                <h3>You can try my creative menu designs or brochures in your restaurants</h3>
+            </div>
+
+            <div class="row">
+                <img src="images/portfolio3.jpg" />
+                <div class="main-row">
+                    <div class="row-text">
+                        <h6>Mobile Development</h6>
+                    </div>
+                    <div class="row-icon">
+                        <i class="bx bx-heart"></i>
+                    </div>
+                </div>
                 <h3>Mobile app landing design & Services</h3>
             </div>
 
-            <div class="portfolio-box">
-                <img src="images/portfolio3.jpg"/>
-                <div class="portfolio-box-header">    
-                    <div class="portfolio-box-text">
+            <div class="row">
+                <img src="images/portfolio4.jpg" />
+                <div class="main-row">
+                    <div class="row-text">
+                        <h6>Applications about sports</h6>
+                    </div>
+                    <div class="row-icon">
+                        <i class="bx bx-heart"></i>
+                    </div>
+                </div>
+                <h3>My mobile app project for analysing your bike routine</h3>
+            </div>
+
+            <div class="row">
+                <img src="images/portfolio5.jpg" />
+                <div class="main-row">
+                    <div class="row-text">
                         <h6>Development</h6>
                     </div>
-                    <div>
-                        <a href="#" class="fas-fa-heart">&#9829;</a>
+                    <div class="row-icon">
+                        <i class="bx bx-heart"></i>
                     </div>
-                </div>    
+                </div>
                 <h3>Mobile app landing design & Services</h3>
             </div>
 
-            <div class="portfolio-box">
-                <img src="images/portfolio4.jpg"/>
-                <div class="portfolio-box-header">    
-                    <div class="portfolio-box-text">
+            <div class="row">
+                <img src="images/portfolio6.jpg" />
+                <div class="main-row">
+                    <div class="row-text">
                         <h6>Development</h6>
                     </div>
-                    <div>
-                        <a href="#" class="fas-fa-heart">&#9829;</a>
+                    <div class="row-icon">
+                        <i class="bx bx-heart"></i>
                     </div>
-                </div>    
-                <h3>Mobile app landing design & Services</h3>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/portfolio5.jpg"/>
-                <div class="portfolio-box-header">    
-                    <div class="portfolio-box-text">
-                        <h6>Development</h6>
-                    </div>
-                    <div>
-                        <a href="#" class="fas-fa-heart">&#9829;</a>
-                    </div>
-                </div>    
-                <h3>Mobile app landing design & Services</h3>
-            </div>
-
-            <div class="portfolio-box">
-                <img src="images/portfolio6.jpg"/>
-                <div class="portfolio-box-header">    
-                    <div class="portfolio-box-text">
-                        <h6>Development</h6>
-                    </div>
-                    <div>
-                        <a href="#" class="fas-fa-heart">&#9829;</a>
-                    </div>
-                </div>    
+                </div>
                 <h3>Mobile app landing design & Services</h3>
             </div>
 
@@ -192,7 +205,7 @@
 
     </section>
 
-   
+
 
 
     <!--Contact-->
@@ -200,40 +213,50 @@
     <section id="contact" class="contact">
         <div class="contact-text">
             <h2>Contact Me</h2>
-            <h4>Lets Work Together</h4>
-            <p>I hope that soon I will take my place among the employees of your company and we will achive our goals.</p>
+            <h4>Let's Work Together</h4>
+            <p>I hope that soon I will take my place among the employees of your company and we will achive our goals.
+            </p>
 
-            <div class="contact-data">
-                <a href="">Geneve/Switzerland</a>
-                <a href="">burakch2020@gmail.com</a>
-                <a href="">+41779619823</a>
+            <div class="contact-list">
+                <li><a href="https://www.google.com/maps/place/Gen%C3%A8ve/@46.2064645,6.0870649,12.3z/data=!4m6!3m5!1s0x478c650693d0e2eb:0xa0b695357b0bbc39!8m2!3d46.2043907!4d6.1431577!16zL20vMDM5MDI"
+                        target="_blank">Geneva/Switzerland</a></li>
+                <li><a href="#contact">burakch2020@gmail.com</a></li>
+                <li><a href="#contact">+41779619823</a></li>
             </div>
+
             <div class="contact-icons">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-instagram"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-pinterest"></a>
-                <a href="#" class="fa fa-skype"></a>
+                <a href="https://www.linkedin.com/in/burak-b-83955b271/" target="_blank"><i
+                        class="bx bxl-linkedin"></i></a>
+                <a href="https://www.instagram.com/bikerburak/" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/1048brk" target="_blank"><i class='bx bxl-github'></i></a>
             </div>
         </div>
+
+
+
         <div class="contact-form">
-            <form>
-                <input type="text" placeholder="Enter Your Name" required>
-                <input type="email" placeholder="Enter Your Mail" required>
-                <input type="text" placeholder="Enter Your Subject">
-                <textarea name="" placeholder="Enter Your Message"></textarea>
-                <button class="submit-box" type="submit" value="Submit">Submit</button>
+            <form action="https://formspree.io/f/xnqyrkjk" method="post">
+                <input name="name" type="text" placeholder="Enter Your Name" required>
+                <input name="email" type="email" placeholder="Enter Your Mail" required>
+                <input name="subject" type="text" placeholder="Enter Your Subject">
+                <textarea name="message" id="" cols="40" rows="10" placeholder="Enter Your Message"></textarea>
+                <input type="submit" value="Send" class="send">
             </form>
-                
         </div>
     </section>
 
-    <div class="last-text">
-        <p>Developed by @ 2022</p> 
-    </div>
+    <footer class="last-text">
+        <p>&copy Developed by Burak for PowerCoders in 2023</p>
+        <!-- scroll-top -->
+    </footer>
 
+    <a href="#" class="top"> <i class="bx bx-up-arrow-alt"></i></a>
 
+    <!--to have a smooth pass between pages I used some templates from here  https://scrollrevealjs.org/ -->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
+    <!-- we add your js file here -->
+    <script src="js/script.js"></script>
 
 </body>
 
